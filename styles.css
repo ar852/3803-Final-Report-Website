@@ -378,6 +378,23 @@ figcaption {
   border-color: #c0d9ed;
 }
 
+/* ---------- Text inside cards — full width ---------- */
+.card p { max-width: none; }
+
+/* ---------- Lists inside cards ---------- */
+.card ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 0.55rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.card ul li:last-child { margin-bottom: 0; }
+
 /* ---------- Grid Layouts ---------- */
 .grid-2 {
   display: grid;
@@ -651,19 +668,30 @@ figcaption {
 .hero-fs__right {}
 
 .hero-fs__summary-card {
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(74, 179, 232, 0.35);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
-  padding: 2rem 2.25rem;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  max-height: 70vh;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.2) transparent;
+  padding: 1.5rem 1.75rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25), inset 0 0 40px rgba(74, 179, 232, 0.05);
 }
 
 /* h2 is now outside the card; see .hero-fs__summary-heading above */
+
+/* Paragraph text inside the dark hero summary card */
+.hero-fs__summary-card p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  margin-bottom: 0.65rem;
+  max-width: none;
+}
+
+.hero-fs__summary-card p:last-child {
+  margin-bottom: 0;
+}
 
 /* Summary heading sits above the card, not inside it */
 .hero-fs__summary-heading {
