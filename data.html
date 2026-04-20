@@ -6,7 +6,7 @@
   <title>Data — Redesigning Weather.gov</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="has-sidenav">
 
   <!-- ======================================================
        NAVIGATION
@@ -25,6 +25,21 @@
     </div>
   </nav>
 
+  <!-- ======================================================
+       LEFT SIDENAV
+  ====================================================== -->
+  <aside class="sidenav" aria-label="Page sections">
+    <div class="sidenav__title">On this page</div>
+    <ul class="sidenav__list">
+      <li><a href="#methodology" data-section="methodology">Methodology</a></li>
+      <div class="sidenav__divider"></div>
+      <li><a href="#findings" data-section="findings">Findings</a></li>
+      <li><a href="#quotes" data-section="quotes" style="padding-left:2rem; font-weight:400;">Participant Quotes</a></li>
+      <div class="sidenav__divider"></div>
+      <li><a href="#analysis" data-section="analysis">Analysis</a></li>
+    </ul>
+  </aside>
+
   <main class="page-content">
 
     <!-- ======================================================
@@ -42,16 +57,11 @@
     <!-- ======================================================
          METHODOLOGY
     ====================================================== -->
-    <section class="section" aria-labelledby="methodology-heading">
+    <section class="section" id="methodology" aria-labelledby="methodology-heading">
       <div class="container">
 
         <div class="section-header">
-          <span class="section-label">Section 2</span>
           <h2 id="methodology-heading">Methodology</h2>
-          <div class="divider"></div>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">
-            How we tested the existing Weather.gov product.
-          </p>
         </div>
 
         <div class="card">
@@ -93,132 +103,95 @@
     <!-- ======================================================
          FINDINGS
     ====================================================== -->
-    <section class="section section--alt" aria-labelledby="findings-heading">
+    <section class="section section--alt" id="findings" aria-labelledby="findings-heading">
       <div class="container">
 
         <div class="section-header">
-          <span class="section-label">Section 3</span>
           <h2 id="findings-heading">Findings</h2>
-          <div class="divider"></div>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">
-            The top usability issues discovered, supported by quantitative and qualitative data.
-          </p>
         </div>
 
         <!-- ---- Usability Issue 1 ---- -->
         <div class="card" style="margin-bottom: 2rem;">
           <h3>Usability Issue 1: [Title Placeholder]</h3>
-
-          <!-- ✏️ PARAGRAPH 1: Describe the first usability issue in detail. -->
           <div class="placeholder placeholder--text" aria-label="Findings paragraph 1 placeholder">
             ✏️ <strong>Paragraph 1 Placeholder</strong> — Describe the first usability issue discovered. What was the problem? Which task(s) revealed it? What did participants do or say?
           </div>
-
           <br>
-
-          <!-- Chart 1 -->
           <figure>
-            <div class="placeholder placeholder--chart" role="img" aria-label="Chart 1 placeholder — replace with your data visualization">
+            <div class="placeholder placeholder--chart" role="img" aria-label="Chart 1 placeholder">
               <span class="placeholder__icon">📊</span>
               <span class="placeholder__label">Chart 1 Placeholder</span>
               <span class="placeholder__hint">Replace with your data visualization (e.g., bar chart of task success rate)</span>
             </div>
-            <figcaption>
-              <!-- ✏️ Add your chart caption/description here -->
-              Figure 1. [Chart title — e.g., "Task 1 Success Rate Across All Participants"]
-            </figcaption>
+            <figcaption>Figure 1. [Chart title — e.g., "Task 1 Success Rate Across All Participants"]</figcaption>
           </figure>
         </div>
 
         <!-- ---- Usability Issue 2 ---- -->
         <div class="card" style="margin-bottom: 2rem;">
           <h3>Usability Issue 2: [Title Placeholder]</h3>
-
-          <!-- ✏️ PARAGRAPH 2: Describe the second usability issue. -->
           <div class="placeholder placeholder--text" aria-label="Findings paragraph 2 placeholder">
             ✏️ <strong>Paragraph 2 Placeholder</strong> — Describe the second usability issue. Include relevant data points and participant observations.
           </div>
-
           <br>
-
-          <!-- Chart 2 -->
           <figure>
-            <div class="placeholder placeholder--chart" role="img" aria-label="Chart 2 placeholder — replace with your data visualization">
+            <div class="placeholder placeholder--chart" role="img" aria-label="Chart 2 placeholder">
               <span class="placeholder__icon">📈</span>
               <span class="placeholder__label">Chart 2 Placeholder</span>
               <span class="placeholder__hint">Replace with your data visualization (e.g., line graph of time-on-task)</span>
             </div>
-            <figcaption>
-              Figure 2. [Chart title — e.g., "Average Time on Task by Task Number"]
-            </figcaption>
+            <figcaption>Figure 2. [Chart title — e.g., "Average Time on Task by Task Number"]</figcaption>
           </figure>
         </div>
 
         <!-- ---- Usability Issue 3 ---- -->
         <div class="card" style="margin-bottom: 2rem;">
           <h3>Usability Issue 3: [Title Placeholder]</h3>
-
-          <!-- ✏️ PARAGRAPH 3: Describe the third usability issue. -->
           <div class="placeholder placeholder--text" aria-label="Findings paragraph 3 placeholder">
             ✏️ <strong>Paragraph 3 Placeholder</strong> — Describe the third usability issue. What patterns emerged? What data supports this finding?
           </div>
-
           <br>
-
-          <!-- Chart 3 -->
           <figure>
-            <div class="placeholder placeholder--chart" role="img" aria-label="Chart 3 placeholder — replace with your data visualization">
+            <div class="placeholder placeholder--chart" role="img" aria-label="Chart 3 placeholder">
               <span class="placeholder__icon">📉</span>
               <span class="placeholder__label">Chart 3 Placeholder</span>
               <span class="placeholder__hint">Replace with your data visualization (e.g., error count per task)</span>
             </div>
-            <figcaption>
-              Figure 3. [Chart title — e.g., "Number of Errors per Task per Participant"]
-            </figcaption>
+            <figcaption>Figure 3. [Chart title — e.g., "Number of Errors per Task per Participant"]</figcaption>
           </figure>
         </div>
 
         <!-- ---- Usability Issue 4 ---- -->
         <div class="card" style="margin-bottom: 2rem;">
           <h3>Usability Issue 4: [Title Placeholder]</h3>
-
-          <!-- ✏️ PARAGRAPH 4: Describe the fourth usability issue. -->
           <div class="placeholder placeholder--text" aria-label="Findings paragraph 4 placeholder">
             ✏️ <strong>Paragraph 4 Placeholder</strong> — Describe the fourth usability issue. Reference your data and connect it to specific UI components on Weather.gov.
           </div>
-
           <br>
-
-          <!-- Chart 4 -->
           <figure>
-            <div class="placeholder placeholder--chart" role="img" aria-label="Chart 4 placeholder — replace with your data visualization">
+            <div class="placeholder placeholder--chart" role="img" aria-label="Chart 4 placeholder">
               <span class="placeholder__icon">📊</span>
               <span class="placeholder__label">Chart 4 Placeholder</span>
               <span class="placeholder__hint">Replace with your data visualization (e.g., satisfaction rating per task)</span>
             </div>
-            <figcaption>
-              Figure 4. [Chart title — e.g., "Post-Task Satisfaction Ratings (1–5 Scale)"]
-            </figcaption>
+            <figcaption>Figure 4. [Chart title — e.g., "Post-Task Satisfaction Ratings (1–5 Scale)"]</figcaption>
           </figure>
         </div>
 
         <!-- ---- Usability Issue 5 (Optional) ---- -->
         <div class="card" style="margin-bottom: 2rem;">
           <h3>Usability Issue 5: [Title Placeholder]</h3>
-
-          <!-- ✏️ PARAGRAPH 5 (optional 5th issue): -->
           <div class="placeholder placeholder--text" aria-label="Findings paragraph 5 placeholder">
             ✏️ <strong>Paragraph 5 Placeholder</strong> — Describe the fifth usability issue, or use this paragraph as a synthesis of the findings. What overarching patterns did the data reveal?
           </div>
         </div>
 
         <!-- ---- Participant Quotes Table ---- -->
-        <div style="margin-top: 2.5rem;">
+        <div id="quotes" style="margin-top: 2.5rem;">
           <h3 style="margin-bottom: 1rem;">Participant Quotes</h3>
           <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">
             Direct quotes from usability test participants highlighting frustration or confusion with Weather.gov.
           </p>
-
           <table class="quotes-table" aria-label="Participant quotes from usability testing">
             <thead>
               <tr>
@@ -268,22 +241,16 @@
     <!-- ======================================================
          ANALYSIS
     ====================================================== -->
-    <section class="section" aria-labelledby="analysis-heading">
+    <section class="section" id="analysis" aria-labelledby="analysis-heading">
       <div class="container">
 
         <div class="section-header">
-          <span class="section-label">Section 4</span>
           <h2 id="analysis-heading">Analysis</h2>
-          <div class="divider"></div>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">
-            Interpreting the findings and justifying design decisions with evidence.
-          </p>
         </div>
 
         <div class="card">
 
-          <!-- ✏️ PARAGRAPH 1: Interpret Finding 1. Connect data to your redesign decision.
-               Reference Figure 1 if applicable. Name the specific UI component. -->
+          <!-- ✏️ PARAGRAPH 1 -->
           <h3>Interpretation of Issue 1</h3>
           <div class="placeholder placeholder--text" aria-label="Analysis paragraph 1 placeholder">
             ✏️ <strong>Paragraph 1 Placeholder</strong> — Interpret usability issue 1. Use quantitative data (e.g., "4 out of 5 participants failed...") and qualitative data. Name the specific UI component on Weather.gov that caused the issue, and explain what your redesign changes and why. Reference Figure 1 if applicable.
@@ -291,7 +258,7 @@
 
           <br>
 
-          <!-- ✏️ PARAGRAPH 2: Interpret Finding 2. -->
+          <!-- ✏️ PARAGRAPH 2 -->
           <h3>Interpretation of Issue 2</h3>
           <div class="placeholder placeholder--text" aria-label="Analysis paragraph 2 placeholder">
             ✏️ <strong>Paragraph 2 Placeholder</strong> — Interpret usability issue 2. Connect the specific data points from your findings to a concrete UI problem, and explain how your redesign addresses it. Reference Figure 2 if applicable.
@@ -299,7 +266,7 @@
 
           <br>
 
-          <!-- ✏️ PARAGRAPH 3: Interpret Finding 3. -->
+          <!-- ✏️ PARAGRAPH 3 -->
           <h3>Interpretation of Issue 3</h3>
           <div class="placeholder placeholder--text" aria-label="Analysis paragraph 3 placeholder">
             ✏️ <strong>Paragraph 3 Placeholder</strong> — Interpret usability issue 3. Use participant quotes from the table above to support your analysis. Name the UI component and describe your redesign decision.
@@ -307,7 +274,7 @@
 
           <br>
 
-          <!-- ✏️ PARAGRAPH 4: Interpret Finding 4. -->
+          <!-- ✏️ PARAGRAPH 4 -->
           <h3>Interpretation of Issue 4</h3>
           <div class="placeholder placeholder--text" aria-label="Analysis paragraph 4 placeholder">
             ✏️ <strong>Paragraph 4 Placeholder</strong> — Interpret usability issue 4. Use both quantitative and qualitative data. Reference Figure 4 if applicable and describe what specific change you made in the prototype.
@@ -315,7 +282,7 @@
 
           <br>
 
-          <!-- ✏️ PARAGRAPH 5: Overall synthesis / conclusion of analysis. -->
+          <!-- ✏️ PARAGRAPH 5 -->
           <h3>Overall Analysis</h3>
           <div class="placeholder placeholder--text" aria-label="Analysis paragraph 5 placeholder">
             ✏️ <strong>Paragraph 5 Placeholder</strong> — Provide a synthesis of the analysis. What do all the findings together tell you about Weather.gov's core usability problems? How does the data collectively justify your redesign approach?
@@ -334,6 +301,47 @@
     <p>Redesigning Weather.gov: A Usability Study &nbsp;·&nbsp; CS 3803, Georgia Tech &nbsp;·&nbsp; Spring 2026</p>
     <p style="margin-top:0.35rem;">Krishang Shukla &nbsp;·&nbsp; Brian Ok &nbsp;·&nbsp; Daniel Leite &nbsp;·&nbsp; Arya Nistane &nbsp;·&nbsp; Silas Teague</p>
   </footer>
+
+  <!-- ======================================================
+       SIDENAV — IntersectionObserver
+  ====================================================== -->
+  <script>
+    (function () {
+      const sections = document.querySelectorAll('section[id], div[id="quotes"]');
+      const links    = document.querySelectorAll('.sidenav__list a[data-section]');
+
+      if (!sections.length || !links.length) return;
+
+      const activate = (id) => {
+        links.forEach(link => {
+          link.classList.toggle('active', link.dataset.section === id);
+        });
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) activate(entry.target.id);
+        });
+      }, {
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: 0
+      });
+
+      sections.forEach(s => observer.observe(s));
+
+      // Smooth scroll on click
+      links.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const target = document.getElementById(link.dataset.section);
+          if (target) {
+            const offset = target.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>

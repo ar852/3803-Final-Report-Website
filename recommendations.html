@@ -6,7 +6,7 @@
   <title>Recommendations — Redesigning Weather.gov</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="has-sidenav">
 
   <!-- ======================================================
        NAVIGATION
@@ -25,6 +25,19 @@
     </div>
   </nav>
 
+  <!-- ======================================================
+       LEFT SIDENAV
+  ====================================================== -->
+  <aside class="sidenav" aria-label="Page sections">
+    <div class="sidenav__title">On this page</div>
+    <ul class="sidenav__list">
+      <li><a href="#recommendations" data-section="recommendations">Recommendations</a></li>
+      <li><a href="#prototype" data-section="prototype" style="padding-left:2rem; font-weight:400;">Prototype</a></li>
+      <div class="sidenav__divider"></div>
+      <li><a href="#conclusion" data-section="conclusion">Conclusion</a></li>
+    </ul>
+  </aside>
+
   <main class="page-content">
 
     <!-- ======================================================
@@ -42,46 +55,31 @@
     <!-- ======================================================
          RECOMMENDATIONS
     ====================================================== -->
-    <section class="section" aria-labelledby="recommendations-heading">
+    <section class="section" id="recommendations" aria-labelledby="recommendations-heading">
       <div class="container">
 
         <div class="section-header">
-          <span class="section-label">Section 5</span>
           <h2 id="recommendations-heading">Design Recommendations</h2>
-          <div class="divider"></div>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">
-            Four to five major changes our study recommends, with comparisons between the existing product and our prototype.
-          </p>
         </div>
 
         <!-- ---- Recommendation 1 ---- -->
         <div class="card comparison-block">
           <h3>Recommendation 1: [Design Change Title Placeholder]</h3>
-
-          <!-- ✏️ PARAGRAPH 1: Describe the design change. Compare to the existing product.
-               Discuss benefits, trade-offs. Connect to usability attributes (efficiency,
-               error reduction, accessibility). -->
-          <div class="placeholder placeholder--text" aria-label="Recommendation 1 paragraph placeholder">
+          <div class="placeholder placeholder--text" aria-label="Recommendation 1 placeholder">
             ✏️ <strong>Paragraph 1 Placeholder</strong> — Describe design change 1. Compare your prototype design to the existing Weather.gov. What specific problem does it solve? What are the benefits and any trade-offs? Connect to usability attributes (efficiency, error reduction, accessibility).
           </div>
-
           <br>
-
-          <!-- Before / After Comparison 1 -->
           <div class="before-after-grid">
             <div>
               <span class="comparison-label comparison-label--before">Before — Weather.gov</span>
               <div class="comparison-img-wrap">
                 <figure>
-                  <div class="placeholder placeholder--image" role="img" aria-label="Before screenshot placeholder for recommendation 1">
+                  <div class="placeholder placeholder--image" role="img" aria-label="Before screenshot 1">
                     <span class="placeholder__icon">🖼️</span>
                     <span class="placeholder__label">Before Screenshot</span>
                     <span class="placeholder__hint">Screenshot of the existing Weather.gov UI for this issue</span>
                   </div>
-                  <figcaption>
-                    <!-- ✏️ Caption: describe what's shown in the before screenshot -->
-                    Figure 5a. [Existing Weather.gov — describe the UI element shown]
-                  </figcaption>
+                  <figcaption>Figure 5a. [Existing Weather.gov — describe the UI element shown]</figcaption>
                 </figure>
               </div>
             </div>
@@ -89,15 +87,12 @@
               <span class="comparison-label comparison-label--after">After — Our Prototype</span>
               <div class="comparison-img-wrap">
                 <figure>
-                  <div class="placeholder placeholder--image" role="img" aria-label="After screenshot placeholder for recommendation 1">
+                  <div class="placeholder placeholder--image" role="img" aria-label="After screenshot 1">
                     <span class="placeholder__icon">✨</span>
                     <span class="placeholder__label">After Screenshot</span>
                     <span class="placeholder__hint">Screenshot of your Figma prototype for this redesign change</span>
                   </div>
-                  <figcaption>
-                    <!-- ✏️ Caption: describe what's shown in the after screenshot -->
-                    Figure 5b. [Prototype redesign — describe the improvement made]
-                  </figcaption>
+                  <figcaption>Figure 5b. [Prototype redesign — describe the improvement made]</figcaption>
                 </figure>
               </div>
             </div>
@@ -107,21 +102,16 @@
         <!-- ---- Recommendation 2 ---- -->
         <div class="card comparison-block">
           <h3>Recommendation 2: [Design Change Title Placeholder]</h3>
-
-          <!-- ✏️ PARAGRAPH 2 -->
-          <div class="placeholder placeholder--text" aria-label="Recommendation 2 paragraph placeholder">
+          <div class="placeholder placeholder--text" aria-label="Recommendation 2 placeholder">
             ✏️ <strong>Paragraph 2 Placeholder</strong> — Describe design change 2. Compare old vs. new, discuss benefits and trade-offs, and connect to usability attributes.
           </div>
-
           <br>
-
-          <!-- Before / After Comparison 2 -->
           <div class="before-after-grid">
             <div>
               <span class="comparison-label comparison-label--before">Before — Weather.gov</span>
               <div class="comparison-img-wrap">
                 <figure>
-                  <div class="placeholder placeholder--image" role="img" aria-label="Before screenshot placeholder for recommendation 2">
+                  <div class="placeholder placeholder--image" role="img" aria-label="Before screenshot 2">
                     <span class="placeholder__icon">🖼️</span>
                     <span class="placeholder__label">Before Screenshot</span>
                     <span class="placeholder__hint">Screenshot of the existing Weather.gov UI for this issue</span>
@@ -134,7 +124,7 @@
               <span class="comparison-label comparison-label--after">After — Our Prototype</span>
               <div class="comparison-img-wrap">
                 <figure>
-                  <div class="placeholder placeholder--image" role="img" aria-label="After screenshot placeholder for recommendation 2">
+                  <div class="placeholder placeholder--image" role="img" aria-label="After screenshot 2">
                     <span class="placeholder__icon">✨</span>
                     <span class="placeholder__label">After Screenshot</span>
                     <span class="placeholder__hint">Screenshot of your Figma prototype for this redesign change</span>
@@ -149,24 +139,19 @@
         <!-- ---- Recommendation 3 ---- -->
         <div class="card comparison-block">
           <h3>Recommendation 3: [Design Change Title Placeholder]</h3>
-
-          <!-- ✏️ PARAGRAPH 3 -->
-          <div class="placeholder placeholder--text" aria-label="Recommendation 3 paragraph placeholder">
+          <div class="placeholder placeholder--text" aria-label="Recommendation 3 placeholder">
             ✏️ <strong>Paragraph 3 Placeholder</strong> — Describe design change 3. Compare old vs. new, discuss benefits and trade-offs, and connect to usability attributes.
           </div>
-
           <br>
-
-          <!-- Before / After Comparison 3 -->
           <div class="before-after-grid">
             <div>
               <span class="comparison-label comparison-label--before">Before — Weather.gov</span>
               <div class="comparison-img-wrap">
                 <figure>
-                  <div class="placeholder placeholder--image" role="img" aria-label="Before screenshot placeholder for recommendation 3">
+                  <div class="placeholder placeholder--image" role="img" aria-label="Before screenshot 3">
                     <span class="placeholder__icon">🖼️</span>
                     <span class="placeholder__label">Before Screenshot</span>
-                    <span class="placeholder__hint">Screenshot of the existing Weather.gov UI for this issue</span>
+                    <span class="placeholder__hint">Screenshot of the existing Weather.gov UI</span>
                   </div>
                   <figcaption>Figure 7a. [Existing Weather.gov — describe the UI element shown]</figcaption>
                 </figure>
@@ -176,10 +161,10 @@
               <span class="comparison-label comparison-label--after">After — Our Prototype</span>
               <div class="comparison-img-wrap">
                 <figure>
-                  <div class="placeholder placeholder--image" role="img" aria-label="After screenshot placeholder for recommendation 3">
+                  <div class="placeholder placeholder--image" role="img" aria-label="After screenshot 3">
                     <span class="placeholder__icon">✨</span>
                     <span class="placeholder__label">After Screenshot</span>
-                    <span class="placeholder__hint">Screenshot of your Figma prototype for this redesign change</span>
+                    <span class="placeholder__hint">Screenshot of your Figma prototype</span>
                   </div>
                   <figcaption>Figure 7b. [Prototype redesign — describe the improvement made]</figcaption>
                 </figure>
@@ -191,24 +176,19 @@
         <!-- ---- Recommendation 4 ---- -->
         <div class="card comparison-block">
           <h3>Recommendation 4: [Design Change Title Placeholder]</h3>
-
-          <!-- ✏️ PARAGRAPH 4 -->
-          <div class="placeholder placeholder--text" aria-label="Recommendation 4 paragraph placeholder">
+          <div class="placeholder placeholder--text" aria-label="Recommendation 4 placeholder">
             ✏️ <strong>Paragraph 4 Placeholder</strong> — Describe design change 4. Compare old vs. new, discuss benefits and trade-offs, and connect to usability attributes.
           </div>
-
           <br>
-
-          <!-- Before / After Comparison 4 -->
           <div class="before-after-grid">
             <div>
               <span class="comparison-label comparison-label--before">Before — Weather.gov</span>
               <div class="comparison-img-wrap">
                 <figure>
-                  <div class="placeholder placeholder--image" role="img" aria-label="Before screenshot placeholder for recommendation 4">
+                  <div class="placeholder placeholder--image" role="img" aria-label="Before screenshot 4">
                     <span class="placeholder__icon">🖼️</span>
                     <span class="placeholder__label">Before Screenshot</span>
-                    <span class="placeholder__hint">Screenshot of the existing Weather.gov UI for this issue</span>
+                    <span class="placeholder__hint">Screenshot of the existing Weather.gov UI</span>
                   </div>
                   <figcaption>Figure 8a. [Existing Weather.gov — describe the UI element shown]</figcaption>
                 </figure>
@@ -218,10 +198,10 @@
               <span class="comparison-label comparison-label--after">After — Our Prototype</span>
               <div class="comparison-img-wrap">
                 <figure>
-                  <div class="placeholder placeholder--image" role="img" aria-label="After screenshot placeholder for recommendation 4">
+                  <div class="placeholder placeholder--image" role="img" aria-label="After screenshot 4">
                     <span class="placeholder__icon">✨</span>
                     <span class="placeholder__label">After Screenshot</span>
-                    <span class="placeholder__hint">Screenshot of your Figma prototype for this redesign change</span>
+                    <span class="placeholder__hint">Screenshot of your Figma prototype</span>
                   </div>
                   <figcaption>Figure 8b. [Prototype redesign — describe the improvement made]</figcaption>
                 </figure>
@@ -233,35 +213,29 @@
         <!-- ---- Recommendation 5 (Optional) ---- -->
         <div class="card comparison-block">
           <h3>Recommendation 5: [Design Change Title Placeholder] <em style="font-size:0.8rem; color:var(--text-muted); font-weight:400;">(optional)</em></h3>
-
-          <!-- ✏️ PARAGRAPH 5 (optional) -->
-          <div class="placeholder placeholder--text" aria-label="Recommendation 5 paragraph placeholder">
-            ✏️ <strong>Paragraph 5 Placeholder (optional)</strong> — If you have a fifth recommendation, describe it here. You may also add a Before/After image block below if applicable.
+          <div class="placeholder placeholder--text" aria-label="Recommendation 5 placeholder">
+            ✏️ <strong>Paragraph 5 Placeholder (optional)</strong> — If you have a fifth recommendation, describe it here. Add a Before/After comparison block below if applicable.
           </div>
         </div>
 
         <!-- ---- Figma Prototype Embed ---- -->
-        <div style="margin-top: 3rem;">
+        <div id="prototype" style="margin-top: 3rem;">
           <h3 style="margin-bottom: 1rem;">Interactive Prototype</h3>
           <p style="max-width: 68ch; margin-bottom: 1.25rem;">
-            <!-- ✏️ Update this sentence with your prototype link when ready -->
             At the following link you will find our fully interactive prototype which demonstrates all of the design recommendations described above:
             <a href="#" style="color: var(--primary-light); font-weight: 600;">
               [✏️ Insert Figma prototype link here]
             </a>
           </p>
-
-          <!-- Figma iframe embed — replace src with your Figma embed URL -->
           <div class="figma-embed-wrap" role="region" aria-label="Figma prototype embed placeholder">
             <span class="ph-icon">🎨</span>
             <p>
               <strong>Figma Prototype Embed Placeholder</strong><br>
-              Replace this block with your Figma embed.<br>
-              In Figma: Share → Get embed code → copy the &lt;iframe&gt; tag and paste it here.
+              In Figma: Share → Get embed code → paste the &lt;iframe&gt; here in place of this block.
             </p>
-            <!-- Paste your Figma <iframe> here, for example:
+            <!-- Paste your Figma <iframe> here:
             <iframe
-              style="border: 1px solid rgba(0, 0, 0, 0.1);"
+              style="border: 1px solid rgba(0,0,0,0.1);"
               width="100%"
               height="480"
               src="https://www.figma.com/embed?embed_host=share&url=YOUR_FIGMA_LINK"
@@ -277,22 +251,16 @@
     <!-- ======================================================
          CONCLUSION
     ====================================================== -->
-    <section class="section section--alt" aria-labelledby="conclusion-heading">
+    <section class="section section--alt" id="conclusion" aria-labelledby="conclusion-heading">
       <div class="container">
 
         <div class="section-header">
-          <span class="section-label">Section 6</span>
           <h2 id="conclusion-heading">Conclusion</h2>
-          <div class="divider"></div>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">
-            Reflections on the design process, lessons learned, and a hand-off to the engineering team.
-          </p>
         </div>
 
         <div class="card">
 
-          <!-- ✏️ PARAGRAPH 1: Wrap up the report. Summarize the project's value.
-               Reflect on what your team learned about UI design and user behavior. -->
+          <!-- ✏️ PARAGRAPH 1 -->
           <h3>Reflections on the Design Process</h3>
           <div class="placeholder placeholder--text" aria-label="Conclusion paragraph 1 placeholder">
             ✏️ <strong>Paragraph 1 Placeholder</strong> — Wrap up the report by reflecting on the design process. Provide a final summary of the project's value. What did this study accomplish?
@@ -300,7 +268,7 @@
 
           <br>
 
-          <!-- ✏️ PARAGRAPH 2: What your team learned about UI design & user behavior. -->
+          <!-- ✏️ PARAGRAPH 2 -->
           <h3>Lessons Learned</h3>
           <div class="placeholder placeholder--text" aria-label="Conclusion paragraph 2 placeholder">
             ✏️ <strong>Paragraph 2 Placeholder</strong> — Reflect on what you and your team learned about the intersection of UI design and user behavior. What surprised you? What would you do differently?
@@ -308,8 +276,7 @@
 
           <br>
 
-          <!-- ✏️ PARAGRAPH 3: Engineering hand-off. What would you say to the Weather.gov
-               engineering team for seamless implementation of your design? -->
+          <!-- ✏️ PARAGRAPH 3 -->
           <h3>Engineering Hand-Off</h3>
           <div class="placeholder placeholder--text" aria-label="Conclusion paragraph 3 placeholder">
             ✏️ <strong>Paragraph 3 Placeholder</strong> — Address the Weather.gov engineering team directly. What would you tell them to ensure seamless implementation of your design? Consider priorities, implementation complexity, accessibility requirements, and next steps.
@@ -328,6 +295,47 @@
     <p>Redesigning Weather.gov: A Usability Study &nbsp;·&nbsp; CS 3803, Georgia Tech &nbsp;·&nbsp; Spring 2026</p>
     <p style="margin-top:0.35rem;">Krishang Shukla &nbsp;·&nbsp; Brian Ok &nbsp;·&nbsp; Daniel Leite &nbsp;·&nbsp; Arya Nistane &nbsp;·&nbsp; Silas Teague</p>
   </footer>
+
+  <!-- ======================================================
+       SIDENAV — IntersectionObserver
+  ====================================================== -->
+  <script>
+    (function () {
+      const sections = document.querySelectorAll('section[id], div[id="prototype"]');
+      const links    = document.querySelectorAll('.sidenav__list a[data-section]');
+
+      if (!sections.length || !links.length) return;
+
+      const activate = (id) => {
+        links.forEach(link => {
+          link.classList.toggle('active', link.dataset.section === id);
+        });
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) activate(entry.target.id);
+        });
+      }, {
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: 0
+      });
+
+      sections.forEach(s => observer.observe(s));
+
+      // Smooth scroll on click
+      links.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const target = document.getElementById(link.dataset.section);
+          if (target) {
+            const offset = target.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
