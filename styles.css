@@ -450,6 +450,32 @@ figcaption {
   border: 1px solid var(--border);
   border-radius: 0 var(--radius) var(--radius) var(--radius);
   overflow: hidden;
+  background: #f8fbfe;
+}
+
+.comparison-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.chart-figure {
+  margin-top: 1.25rem;
+}
+
+.figure-img {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  background: var(--white);
 }
 
 /* ---------- Quotes Table ---------- */
@@ -531,6 +557,14 @@ figcaption {
   max-width: 36ch;
 }
 
+.figma-embed-wrap iframe {
+  width: 100%;
+  min-height: 520px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 8px;
+  background: var(--white);
+}
+
 /* ---------- Footer ---------- */
 .footer {
   background-color: var(--primary);
@@ -566,15 +600,8 @@ figcaption {
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.18;
-  /* placeholder pattern */
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 20px,
-    rgba(74, 179, 232, 0.15) 20px,
-    rgba(74, 179, 232, 0.15) 40px
-  );
+  opacity: 0.16;
+  background-image: url('assets/images/hero-banner.png');
 }
 
 .hero-fs__bg-label {
@@ -812,7 +839,8 @@ figcaption {
 @media (max-width: 700px) {
   .grid-2,
   .grid-2-1,
-  .before-after-grid {
+  .before-after-grid,
+  .chart-grid {
     grid-template-columns: 1fr;
   }
 
