@@ -262,6 +262,58 @@
   </footer>
 
   <!-- ======================================================
+       LIGHTBOX
+  ====================================================== -->
+  <script>
+    (function () {
+      // Build overlay
+      const overlay = document.createElement('div');
+      overlay.className = 'lightbox-overlay';
+      overlay.setAttribute('role', 'dialog');
+      overlay.setAttribute('aria-modal', 'true');
+      overlay.setAttribute('aria-label', 'Image viewer');
+      overlay.innerHTML =
+        '<button class="lightbox-overlay__close" aria-label="Close">&times;</button>' +
+        '<img class="lightbox-overlay__img" src="" alt="" />' +
+        '<p class="lightbox-overlay__caption"></p>';
+      document.body.appendChild(overlay);
+
+      const lbImg     = overlay.querySelector('.lightbox-overlay__img');
+      const lbCaption = overlay.querySelector('.lightbox-overlay__caption');
+      const lbClose   = overlay.querySelector('.lightbox-overlay__close');
+
+      function open(img) {
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        const fig = img.closest('figure');
+        const cap = fig && fig.querySelector('figcaption');
+        lbCaption.textContent = cap ? cap.textContent : '';
+        overlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function close() {
+        overlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      // Wrap each image so the hover icon works, then attach click
+      document.querySelectorAll('.figure-img, .comparison-image').forEach(function (img) {
+        img.classList.add('lightbox-trigger');
+        var wrap = document.createElement('div');
+        wrap.className = 'lightbox-trigger-wrap';
+        img.parentNode.insertBefore(wrap, img);
+        wrap.appendChild(img);
+        wrap.addEventListener('click', function () { open(img); });
+      });
+
+      lbClose.addEventListener('click', close);
+      overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    })();
+  </script>
+
+  <!-- ======================================================
        SIDENAV — IntersectionObserver
   ====================================================== -->
   <script>
